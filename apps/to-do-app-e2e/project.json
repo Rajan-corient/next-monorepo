@@ -1,0 +1,25 @@
+{
+  "name": "to-do-app-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/to-do-app-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/to-do-app-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "to-do-app:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "to-do-app:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["to-do-app"]
+}
