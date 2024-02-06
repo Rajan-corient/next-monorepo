@@ -69,5 +69,21 @@
       }
     }
   },
-  "nxCloudAccessToken": "MGIyMTkyZmMtZjA4Ny00OTY2LWFjYTItN2MwOGIxOWMxZWYwfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MGIyMTkyZmMtZjA4Ny00OTY2LWFjYTItN2MwOGIxOWMxZWYwfHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ]
 }
