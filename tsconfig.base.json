@@ -17,7 +17,7 @@
     "paths": {
       "@nx-nextjs-monorepo/data-access/server": ["pokemon/src/server.ts"],
       "@nx-nextjs-monorepo/pokemon": ["libs/pokemon/src/index.ts"],
-      "@nx-nextjs-monorepo/shared-types": ["shared-types/src/index.ts"]
+      "@nx-nextjs-monorepo/shared-types": ["libs/shared-types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

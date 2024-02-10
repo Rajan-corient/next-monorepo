@@ -1,14 +1,14 @@
 {
   "name": "shared-types",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "shared-types/src",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared-types/src",
   "projectType": "library",
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "shared-types/jest.config.ts"
+        "jestConfig": "libs/shared-types/jest.config.ts"
       }
     }
   },
