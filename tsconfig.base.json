@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-nextjs-monorepo/data-access": ["pokemon/src/index.ts"],
       "@nx-nextjs-monorepo/data-access/server": ["pokemon/src/server.ts"],
+      "@nx-nextjs-monorepo/pokemon": ["libs/pokemon/src/index.ts"],
       "@nx-nextjs-monorepo/shared-types": ["shared-types/src/index.ts"]
     }
   },
